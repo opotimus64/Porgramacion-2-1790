@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fecb3d1675754913bb85ffd11fcf783f" Name="Diagram1">
+        <EntityTypeShape EntityType="GestionSolicitudesDBModel.Estado" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestionSolicitudesDBModel.Prioridad" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestionSolicitudesDBModel.Responsable" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestionSolicitudesDBModel.Seguimiento" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestionSolicitudesDBModel.Solicitud" Width="1.5" PointX="6" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestionSolicitudesDBModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestionSolicitudesDBModel.TipoSolicitud" Width="1.5" PointX="3.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GestionSolicitudesDBModel.Usuario" Width="1.5" PointX="3.75" PointY="10.625" IsExpanded="true" />
+        <AssociationConnector Association="GestionSolicitudesDBModel.FK_Seguimiento_EstadoAnterior" ManuallyRouted="false" />
+        <AssociationConnector Association="GestionSolicitudesDBModel.FK_Seguimiento_EstadoNuevo" ManuallyRouted="false" />
+        <AssociationConnector Association="GestionSolicitudesDBModel.FK_Solicitud_Estado" ManuallyRouted="false" />
+        <AssociationConnector Association="GestionSolicitudesDBModel.FK_Solicitud_Prioridad" ManuallyRouted="false" />
+        <AssociationConnector Association="GestionSolicitudesDBModel.FK_Seguimiento_Responsable" ManuallyRouted="false" />
+        <AssociationConnector Association="GestionSolicitudesDBModel.FK_Solicitud_Responsable" ManuallyRouted="false" />
+        <AssociationConnector Association="GestionSolicitudesDBModel.FK_Seguimiento_Solicitud" ManuallyRouted="false" />
+        <AssociationConnector Association="GestionSolicitudesDBModel.FK_Solicitud_Tipo" ManuallyRouted="false" />
+        <AssociationConnector Association="GestionSolicitudesDBModel.FK_Solicitud_Usuario" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

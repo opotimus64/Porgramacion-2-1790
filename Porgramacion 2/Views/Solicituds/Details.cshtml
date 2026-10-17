@@ -1,0 +1,90 @@
+﻿@model Porgramacion_2.Models.Solicitud
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Solicitud</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Solucion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Solucion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaCreacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaCreacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaCierre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaCierre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prioridad.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prioridad.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Responsable.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Responsable.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoSolicitud.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoSolicitud.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.Nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdSolicitud }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
